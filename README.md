@@ -1,6 +1,6 @@
 # ELE330-Design-of-Medical-Devices-and-Implants-SPRING-2025-26-Peripheral-and-Core-Thermal-Model
 
-This is a project 
+This is for the University of Sheffield ELE330 Design of Medical devices, and is made to assist with the design of a medical device for maintaining body temperature for patients going under general anaesthesia for a student module at the University of Sheffield
 
 ## Installation
 
