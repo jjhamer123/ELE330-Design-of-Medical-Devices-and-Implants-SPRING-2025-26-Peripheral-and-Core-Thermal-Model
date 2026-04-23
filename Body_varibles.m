@@ -127,13 +127,12 @@ A_onsie=0.15; %area covered by onsie
 % [1] Bindu et al. 2017: respiratory losses < 10% of metabolic heat
 % [3] Stolwijk 1971: respiratory evaporation included in basal heat balance
 
-V_tidal   = 0.0005;   % m^3     tidal volume, 500 ml standard adult [1]
-f_resp    = 0.2;      % Hz      respiratory rate, 12 breaths/min
-rho_air   = 1.2;      % kg/m^3  density of air at body temperature
-c_air     = 1005;     % J/kg/C  specific heat of air
-T_gas_in  = ambient_temp;  % deg C  gas delivered at OR ambient temp [1]
+V_tidal = 0.0005;% m^3     tidal volume, 500 ml standard adult [1]
+f_resp = 0.2;  % Hz      respiratory rate, 12 breaths/min
+rho_air = 1.2; % kg/m^3  density of air at body temperature
+c_air = 1005;  % J/kg/C  specific heat of air
+T_gas_in = ambient_temp;  % deg C  gas delivered at OR ambient temp [1]
 
-% Peak respiratory heat loss amplitude (W)
 % Q_resp_peak = V_tidal x f x rho x c x (T_core - T_gas)
 % = 0.0005 x 0.2 x 1.2 x 1005 x (37 - 21)
 Q_resp_peak = V_tidal * f_resp * rho_air * c_air * (Core_temp - T_gas_in);
